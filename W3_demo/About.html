@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dennis Johnson" >
+    <meta name="description" content="W3D2 Demo " >
+    
+    <title>W3 | About </title>
+
+
+    <!--In document styling: can style all elements in page-->
+    <style>
+        /*we are now writing in CSS*/
+
+        /*Selection in CSS or Javascript:
+            selecting an element within the page to do something with them
+            (styling, actions, applying buttons or functions)
+
+            Selection can occur through three main ways:
+
+            *Tag Name - all tags of this type take the style
+
+            *ID Value - only the element with that id takes the style
+
+            *Class Value
+        */
+
+        /* Anatomy of CSS Code Blocks:
+
+            selector {
+                property: value;
+            }
+        */
+
+        div{/*applies to all divs in the page*/
+
+            border:1px solid black;
+            padding:10px; /*space added between element content and border*/
+            margin:5px; /*space added outside of the elements boders*/ 
+        
+        
+        
+        }
+
+        #wrapper{/*select element by id*/
+        
+        border:1px solid red;
+    
+    }
+
+    .border {/*selecting elements by class: only elements with this class value are affected*/
+        
+        border:2px solid green
+        
+    }
+
+    #footer, #header, #nav {
+
+        text-align:center;
+    }
+
+
+    </style>
+
+</head>
+<!--In line styling-->
+<body style="background-color: rgb(192,191,191);">
+
+
+    <!--Wrapper-->
+    <div id="wrapper">
+
+
+        <!--Header-->
+        <div id="header" class="border">
+           
+            <h1 id ="title" class="fancy">The Last of Us</h1>
+
+        </div><!--/#header-->
+        
+        <!--Nav-->
+        <div id="nav">
+
+            <a href="index.html">| Home |</a>
+            <a href="About.html">| About |</a>
+            <a href="people.html">| People |</a>
+            <a href="places.html">| Places |</a>
+            <br>
+
+            <!--external link: goes outside of sites domain-->
+
+            <a href="https://www.hbo.com/the-last-of-us"target="_blank">| Official HBO Site |</a>
+
+            <br>
+
+            <a href="#footer">| Bottom of Page </a>
+
+            
+
+
+        </div><!--/#nav-->
+
+        <!--Content-->
+        <div id="content" class="border">
+            <h2>Content for <b>About</b></h2>
+
+            <img src="images/the-last-of-us.webp" alt="Last of us web page"width="500px">
+
+            
+
+
+        </div><!--content-->
+
+        <!--Footer-->
+        <div id="footer">
+
+            <p>&copy; D Johnson | SE111.02 | <span class="fancy"></span>202340</p>
+            <br>
+            <a href="index.html#header">Top of the Home Page</a>
+
+
+        </div><!--/#footer-->
+
+
+
+    </div><!--/#wrapper-->
+
+</body>
+</html>
