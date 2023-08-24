@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Dennis Johnson">
+<meta name="description" content="Week 6 Pay Calculator">
+<title>Week 6 Pay Calculator</title>
+<style>
+body{
+    background-color: rgb(74, 143, 143);
+}
+
+</style>
+
+</head>
+
+<body>
+   
+   <h1>Week 6 Pay Calculator</h1>
+   
+   
+   <script>
+
+     
+    //Prompts to be answered by user
+      var num1 = Number(prompt("What is your hourly pay?"))
+      var num2 = Number(prompt("How many hours do you work each week?"))
+      var weeks = Number(prompt("How many weeks did you work?")) 
+      var tax  =  Number(prompt("What is your income tax rate as a %"))
+      
+      
+
+      //Calculations
+      var grosspay = Number(num1 * num2 * weeks)
+      var tax2 = Number(tax / 100)
+      var tax3 = Number(grosspay * tax2)
+      var netpay = Number(grosspay - tax3)
+
+
+        //console display
+      console.log(`Your grosspay is: \n${grosspay.toFixed(2)}`) 
+      console.log(`Your tax due is: \n${tax3.toFixed(2)}`)
+      console.log(`Your netpay is: \n${netpay.toFixed(2)}`)
+
+
+        //alert prompt
+      alert(`Your grosspay is \n${grosspay.toFixed(2)}
+
+      Your tax due is \n${tax3.toFixed(2)}
+
+      Your netpay is \n${netpay.toFixed(2)}
+
+      Please refresh page to use again`)
+
+   
+
+     
+
+      
+   </script>
+ <div id="footer">
+
+
+    
+    <p>&copy; D Johnson | SE111.02 | 202340</p>
+
+  
+    
+
+</div><!--/ #footer-->
+</body>
+</html>
