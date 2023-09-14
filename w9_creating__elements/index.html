@@ -25,7 +25,7 @@
     <br>
 
     <script type="text/javascript">
-
+        //array start
         var people =[
            
             {
@@ -80,7 +80,7 @@
 
 
             }
-
+            //array end
        
 
 
@@ -91,9 +91,9 @@
 
            
         ]
-   
+            
         console.log(people[0])
-        console.log(people[0].first)
+        console.log(people[0].first)//first name
 
 
        
@@ -101,7 +101,7 @@
         console.log(body)
         console.dir(body)
 
-       
+        //access the values in the array
         for(let i = 0; i < people.length; i++)
         {
 
@@ -122,10 +122,10 @@
                
                 var text = document.createTextNode(people[i][key])
 
-               
+                //add the entire div (containing all object property info) to the page
                 p.appendChild(text)
                 tempDiv.appendChild(p)
-            }
+            }//end loop
            
 
            
